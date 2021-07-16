@@ -32,6 +32,8 @@ function addProduct() {
     image.setAttribute("class", "card-img-top");
     image.alt = "Product Image";
     image.style.maxHeight = "170px";
+    image.style.margin= "auto";
+    image.style.width="50%";
 
     var imgpath = document.getElementById("image").value.split("\\").pop();
     image.src = imgpath;
@@ -128,26 +130,27 @@ function addCart(item) {
     cart.setAttribute("class","cart");
     cart.style.display="flex";
     document.getElementById("main").appendChild(cart);
-
-    var carts=document.createElement("div");
-    carts.setAttribute("class","carts");
-    carts.style.flex="0.75";
-    document.getElementById("carts").appendChild(carts);
-
     var product = document.createElement("div");
 
-    product.setAttribute("class", "cart2");
-    product.style.maxWidth="1200px";
-    product.style.margin="20px auto";
 
     var cartImage = document.createElement("img");
-    cartImage.setAttribute("class", "card-img-top");
+    cartImage.setAttribute("class", "card-img-top ");
    cartImage.alt = "Product_Cart Image cartImage";
     cartImage.style.maxHeight = "170px";
+    cartImage.style.width="24%";
+    cartImage.style.objectfit="cover";
+
+    
+
+    var imcartImageage = document.createElement("img");
+    cartImage.setAttribute("class", "card-img-top");
+     cartImage.alt = "Product Image";
+    cartImage.style.maxHeight = "170px";
+    cartImage.style.margin= "auto";
     cartImage.src = item.childNodes[1].src;
 
     var div = document.createElement("div");
-    div.setAttribute("class", "cart-info");
+    div.setAttribute("class", "cart-info  cart2");
     div.style.display="flex";
     div.style.position="relative";
     var productName = document.createElement("p");
@@ -181,7 +184,7 @@ function addCart(item) {
 
     var button = document.createElement("button");
     button.setAttribute("class", "btn  remove");
-     button.style.width="12%";
+     button.style.width="28%";
 
     button.innerHTML = "Remove";
     button.setAttribute("onclick", "removeItem(this.parentNode)");
