@@ -96,6 +96,7 @@ function addProduct() {
   } else {
     alert("Please enter deatils Properly");
   }
+  alert("Product Added Successfully");
   document.getElementById("newForm").reset();
 }
 
