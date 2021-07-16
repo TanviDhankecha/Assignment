@@ -104,14 +104,14 @@ body {
     position: relative;  
   }
   .cart-info p{
-    padding:20px;  
+    padding:40px;  
     font-size: 20px;
   }
   
   .remove{  
     position: absolute;  
     bottom: 20px;     
-     right: 20px;  
+     right: 100px;  
     padding: 10px 25px;  
     background-color: dodgerblue;  
     color: white;  
@@ -129,5 +129,5 @@ body {
     border: 2px solid lightgray;
   }
   .cart2{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
   }
