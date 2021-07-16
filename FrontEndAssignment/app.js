@@ -204,6 +204,7 @@ function addCart(item) {
     product.appendChild(div);
     document.getElementById("cartList").appendChild(product);
   }
+  alert("Selected product is added to the cart");
 }
 
 function removeItem(removeItem) {
