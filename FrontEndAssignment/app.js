@@ -96,7 +96,11 @@ function addProduct() {
   } else {
     alert("Please enter deatils Properly");
   }
+<<<<<<< HEAD
   document.getElementById("newForm").reset();
+=======
+   document.getElementById("newForm").reset();
+>>>>>>> 38e884cf652a4cd2ddb3c502d114a9f549a80e06
 }
 
 function addCart(item) {
