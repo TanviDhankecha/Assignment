@@ -8,7 +8,7 @@ function addProduct() {
     !document.getElementById("price").value ||
     !document.getElementById("image").value
   ) {
-    alert("Please Fill out the details");
+    alert("Please Enter details");
   } else if (
     isNaN(document.getElementById("product").value) &&
     isNaN(document.getElementById("description").value) &&
@@ -92,7 +92,7 @@ function addProduct() {
     product.appendChild(div);
     document.getElementById("products").appendChild(product);
   } else {
-    alert("You have not entered deatils Properly...");
+    alert("Please enter deatils Properly");
   }
 }
 
@@ -113,7 +113,7 @@ function addCart(item) {
     enterQuantity <= 0 ||
     Number(enterQuantity) > Number(quan.childNodes[1].innerHTML)
   ) {
-    alert("Please Check Your Entered Quantity...");
+    alert("This much Quantity is not available");
   } else {
     var resultQuantity = quan.childNodes[1].innerHTML - enterQuantity;
 
