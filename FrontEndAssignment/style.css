@@ -1,0 +1,133 @@
+* {box-sizing: border-box;}
+.c-body .c-text{
+  border: 2px solid red;
+  color:yellow;
+}
+.hide{
+  display: none;
+}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-body{
+    height:auto;
+}
+  .form-inline {  
+    display: grid;
+    flex-flow: row wrap;
+    align-items: center;
+    padding:2em;
+  }
+  
+  .form-inline label {
+    margin: 5px 10px 5px 0;
+  }
+  
+  .form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  .form-inline button {
+    padding: 10px 20px;
+    width: 13em;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .form-inline button:hover {
+    background-color: white;
+    color:dodgerblue;
+  }
+  
+  @media (max-width: 800px) {
+    .form-inline input {
+      margin: 10px 0;
+    }
+    
+    .form-inline {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+  
+  }
+  .card p{
+    color:black;
+  }
+  .card h1{
+    color:black;
+  }
+
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: dodgerblue;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  } 
+
+
+  .cartImage > img{
+
+    width: 300px;  
+    height: 200px;  
+    object-fit: cover;  
+  }
+
+  .cart-info{
+
+    padding: 20px;  
+    width: 100%;
+    position: relative;  
+  }
+  .cart-info p{
+    padding:20px;  
+    font-size: 20px;
+  }
+  
+  .remove{  
+    position: absolute;  
+    bottom: 20px;     
+     right: 20px;  
+    padding: 10px 25px;  
+    background-color: dodgerblue;  
+    color: white;  
+    cursor: pointer;   
+     width:20%;  
+  }
+  .remove:hover{
+    background-color: red;  
+  }
+
+  .total{
+    width: 200px;
+    height: 106px;
+    padding: 10px;
+    border: 2px solid lightgray;
+  }
+  .cart2{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }

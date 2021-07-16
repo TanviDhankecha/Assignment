@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Ecommarce</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="style.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+ img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+img:hover{opacity:1}
+</style>
+<body>
+
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s4">
+      <a href="#" class="w3-button w3-block w3-black">Add Products</a>
+    </div>
+    <div class="w3-col s4">
+      <a href="#productli" class="w3-button w3-block w3-black">Products</a>
+    </div>
+    <div class="w3-col s4">
+      <a href="#cart" class="w3-button w3-block w3-black">Cart</a>
+    </div>
+  </div>
+</div>
+
+<!-- !PAGE CONTENT! -->
+
+<!--Add product-->
+<div class="w3-main" style="margin-left:40px;margin-right:40px">
+<div class="w3-container"  style="margin-top:75px">
+  <h1 class="w3-xxxlarge w3-text-blue"><b>Add Product</b></h1>
+  <form class="form-inline" action="index.html">
+   
+      <label for="product" class="form-label">Product</label>
+      <input type="text" class="form-control" id="product"  required>
+
+
+      <label for="description" class="form-label">Description</label>
+      <input type="text" class="form-control" id="description" required>
+
+  
+        <label for="image" class="form-label">Image</label>
+        <input type="file" class="form-control" id="image" required>
+  
+  
+       Quantity: <input type="text" class="form-control " id="quantity" required>
+        Price:<input type="text" class="form-control" id="price" required>
+
+    
+    <button type="button" class="btn btn-primary" onclick="addProduct();">Add Product</button>
+  </form>
+
+</div>
+<!--End Add product-->
+
+ <!--Start of product-->
+  <div class="w3-container" id="productli" >
+    <h1 class="w3-xxxlarge w3-text-blue w3-padding-top-64"><b>Products</b></h1>
+    <div class="col-md-12 vh-100"   id="products">            
+    </div>
+  </div>
+  <!--End of product-->
+
+  <!--Start of cart-->
+  <div class="w3-container" id="cart" >
+    <h1 class="w3-xxxlarge w3-text-blue w3-padding-top-64"><b>Cart</b></h1>
+    <div class="total" >
+    <h5 class="card-t
+    itle text-center text-uppercase fs-3">Cart</h5>
+      <h6 class="card-subtitle mb-2 text-end text-muted">Total Price: <span id="total-price"></span> </h6>
+    </div>
+      <div id="main">
+        <div id="carts">
+        <div class=" col-md-8 vh-100"id="cartList">
+          <hr>
+        </div>
+      </div>
+      </div>       
+  </div>
+  <!--End of cart-->
+
+<!-- End page content -->
+</div>
+<script src="app.js">
+    
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
