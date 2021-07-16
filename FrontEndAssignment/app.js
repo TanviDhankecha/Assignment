@@ -96,6 +96,7 @@ function addProduct() {
   } else {
     alert("Please enter deatils Properly");
   }
+   document.getElementById("newForm").reset();
 }
 
 function addCart(item) {
