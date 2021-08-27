@@ -1,0 +1,49 @@
+<ng-container *ngIf="cart_list.length !=0">
+    <div class="container" style="margin-top: 3rem;">
+        <div class="card-table">
+            <div class="cart-product">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th> Name</th>
+                            <th>Image</th>
+                            <th>Description</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let products of cart_list" id="cartList">
+                            <td>{{products.name}}</td>
+                            <td><img style="width: 120px;" src="{{products.imagepath}}" alt=""></td>
+                            <td style="width: 25%;">{{products.description}}</td>
+                            <td style="width: 12%;">{{products.quantity}}</td>
+                            <th style="width: 12%;">{{products.price}}</th>
+                            
+                            <td>
+                                <button (click)=removeproduct(products) class="btn btn-danger">Delete</button>
+                            </td>
+                        </tr>
+                     
+                    </tbody>
+                </table>
+                <h6 class="card-subtitle mt-2 text-end text-muted fs-5" style="color: black;margin-right:2em">
+                    Total Price: <span id="total-price"> {{total_price}}</span> </h6> 
+            </div>
+        </div>
+    </div>
+    
+</ng-container>
+
+
+ <ng-container *ngIf="cart_list.length ==0">
+    <div class="container">
+       
+        <div class="center">
+            <h4>Your cart is empty!</h4>
+            <h6>Add item to it now</h6>
+            <button routerLink="/products" class="btn btn-primary">Shop Now</button>
+        </div>
+    </div>
+</ng-container> 

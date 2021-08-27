@@ -1,0 +1,48 @@
+ <div class="container" style="margin-top:2.5rem">
+    <div class="row dd-flex ">
+        <ng-container *ngFor  = "let products of _product_list">
+        <div class="col-md-4">
+            <div class="card px-4">
+                <div class="row col-md-12">
+                        <img src="{{products.imagepath}}" alt="">
+                        <h2 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;"><strong>{{products.name}}</strong></h2>
+                        <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;"><strong>Description :</strong> {{products.description}}</p>
+                        <p><strong>Price :</strong> {{products.price}}</p>
+                        <p><strong>Quantity :</strong> {{products.quantity}}</p>
+                        <div style="margin:1em;margin-left: initial;">
+                        <button class="btn btn-primary" (click)=addtocart(products)>Add to cart</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+    </div>
+</div>  
+<!-- 
+ <div class="vh-100 " style="margin-top: 2rem;">
+    <div class="container">
+        <div class="row">
+        <ng-container *ngFor  = "let products of _product_list">
+            <div class="col-md-4"style="margin-top: 1rem;margin-bottom:1rem">
+        <div class="card p-2">
+            <div class="p-info px-3 py-3">
+                <div>
+                    <h2 class="mb-0"><strong>{{products.name}}</strong></h2>
+                </div>
+                <div class="p-price d-flex flex-row"> <span>Rs.</span>
+                    <h3><strong> {{products.price}}</strong></h3>
+                </div>
+                <div class="heart"> <i class="bx bx-heart"></i> </div>
+            </div>
+            <div class="text-center p-image"> <img src="{{products.imagepath}}" alt=""></div>
+            <div class="p-about">
+              <h4><strong>Description :</strong>{{products.description}}</h4>
+              <h4><strong>Quantity :</strong>{{products.quantity}}</h4>
+            </div>
+            <div class="buttons d-flex flex-row gap-3 px-3"> <button class="btn btn-primary w-100" (click)=addtocart(products)>ADD TO CART</button>  </div>
+        </div>
+    </div>
+    </ng-container>
+</div>
+    </div>
+</div>  -->
